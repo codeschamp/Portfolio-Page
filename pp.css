@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Montserrat&display=swap');
+html {
+  font-family: 'Montserrat';
+  background-color: black;
+}
+
+/*Header styles*/
+#navbar {
+  text-align: right;
+  background-color: #EA1F49;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 9998;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #faebd7;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+color: #45567d;  
+}
+
+#navbar ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 70px; 
+}
+
+/*Body Section Styles*/
+
+/*Welcome section Styles*/
+#welcome-section {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #303841, #0E1818);
+  text-align: center;
+  display: inline-block;
+}
+
+#welcome-section h1 {
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+  color: #faebd7;
+}
+
+#welcome-section p {
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+  color: #EA1F49;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*Projects section Styles*/
+#projects {
+  font-family: 'Crimson Pro';
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to left, #303841, #45567d);
+  display: inline-block;
+}
+
+/*Contact section Styles*/
+
+#contact {
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #303841, #99cc99);
+  display: inline-block;
+}
+
+/*Individual styles*/
+h1 {
+  color: #fff5ee;
+  font-size: 3rem;
+}
+
+/*Projects heading*/
+section#projects > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #faebd7;
+  padding: 20px;
+  margin-top: 5%;
+  border-bottom: solid #EA1F49;
+}
+
+/*Projects "table"*/
+div#wrap {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#projects > #wrap a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#projects > div#wrap div.left {
+  text-align: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background: linear-gradient(to left, #45567d 50%, #faebd7 90%);
+  border-radius: 25px;
+}
+
+#projects > div#wrap div.right {
+  text-align: right;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background: linear-gradient(to right, #45567d 50%, #faebd7 90%);
+  border-radius: 25px;
+}
+
+/*Contact Styles*/
+section#contact > div#contact-header, div#links {
+  text-align: center;
+}
+
+section#contact > div#contact-header {
+  margin-top: 10%;
+}
+
+section#contact h2 {
+  font-size: 3rem;
+  color: #faebd7;
+}
+
+section#contact p {
+  font-size: 1.2rem;
+  color: #38291f;
+}
+
+section#contact div#links {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  border-bottom: solid #EA1F49;
+}
+
+section#contact div#links a {
+  text-decoration: none;
+  color: #faebd7;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 40px;
+  text-shadow: 1px 1px 1px #1f1f1f;
+}
+
+section#contact div#links a:hover {
+  color: #45567d;
+  text-shadow: none;
+}
+
+/*Side bars*/
+#navleft {
+  background-color: black;
+  position: fixed;
+  height: 100vh;
+  width: 7.5px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#navright {
+  background-color: black;
+  position: fixed;
+  height: 100vh;
+  width: 7.5px;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/*Media Querie for smaller screen*/
+@media only screen and (max-width: 800px) {
+  html {
+   font-family: "Crimson Pro"; 
+   font-size: 90%;
+  }
+}
